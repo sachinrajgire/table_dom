@@ -11,18 +11,80 @@
     <h1>Grocery List</h1>
     <div class="add">
         <input type="text" placeholder="Please enter a grocery here" id="add-grocery">
-        <button >ADD</button>
+        <button onclick='addclickhandler()'>ADD</button>
+    </div>
+    <div>
+        <button onclick='changeBackground()'>Change Background </button>
     </div>
     <section class="grocery">
-        <ol>
-            <li>Apple</li>
-            <li>Orange</li>
+        <ol id='ol-list'>
+            <li onClick='done(this)'>Apple</li>
+            <li onClick='done(this)'>Orange</li>
         </ol>
     </section>
+<section class="names">
+       
+<table id="customers">
+    <tr>
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Berglunds snabbköp</td>
+      <td>Christina Berglund</td>
+      <td>Sweden</td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+    <tr>
+      <td>Ernst Handel</td>
+      <td>Roland Mendel</td>
+      <td>Austria</td>
+    </tr>
+    <tr>
+      <td>Island Trading</td>
+      <td>Helen Bennett</td>
+      <td>UK</td>
+    </tr>
+    <tr>
+      <td>Königlich Essen</td>
+      <td>Philip Cramer</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Laughing Bacchus Winecellars</td>
+      <td>Yoshi Tannamuri</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td>Magazzini Alimentari Riuniti</td>
+      <td>Giovanni Rovelli</td>
+      <td>Italy</td>
+    </tr>
+    <tr>
+      <td>North/South</td>
+      <td>Simon Crowther</td>
+      <td>UK</td>
+    </tr>
+    <tr>
+      <td>Paris spécialités</td>
+      <td>Marie Bertrand</td>
+      <td>France</td>
+    </tr>
+  </table>
+</section>
 
-    <script>
-        let li = document.getElementsByTagName("li")
-        console.log(li)
-    </script>
+
+    <script src="./myjs.js"></script>
 </body>
 </html>
+
